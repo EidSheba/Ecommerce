@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut </title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- Link Swiper's CSS -->
+
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <a href="#" class="logo"><img src="img/cart (1).jpg" alt=""></a>
+                <form name="" class="search-box">
+                    <div class="select-box">
+                        <select id="catogray" name="catogray">
+                            <option value="All Categoreis">All Categoreis</option>
+                            <option value="Electroinics & Digita">Electroinics & Digita</option>
+                            <option value="Phones & Tablety">Phones & Tablety</option>
+                            <option value="Fashion & Clothings">"Fashion & Clothings</option>
+                            <option value="Telivasion & Monitor">Telivasion & Monitor</option>
+                            <option value="Jewelry & Watches">Jewelry & Watches</option>
+                            <option value="Washing Machine">Washing Machine</option>
+                            <option value="Toys & Hobbies">Toys & Hobbies</option>
+                        </select>
+                    </div>
+                    <input type="text" name="search" id="search" placeholder="search for a product" required>
+                    <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="header-icons">
+                    <div class="icon">
+                        <a href="#">
+                         <i class="fa-regular fa-heart"></i>
+                         <span class="count count-favourite">0</span>
+                        </a>
+                    </div>
+                     <div class="icon">
+                        <a href="#">
+                         <i class="fa-solid fa-cart-shopping cart-shop"></i>
+                         <span class="count count-item-header">0</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bootom-header">
+            <div class="container">
+                <nav class="nav">
+                  <div class="catogery-nav">
+                    <div class="catogery-btn">
+                          <i class="fa-solid fa-bars"></i>
+                            <p>Browser Category</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="catogery-nav-list">
+                        <a href="#">Top 10 Offers</a>
+                        <a href="#">Electronics & Digita</a>
+                        <a href="#">Phones & Tablet</a>
+                        <a href="#">Fashion & Clothing</a>
+                        <a href="#">Telivasion & Monitor</a>
+                        <a href="#">Jewelry & Watches</a>
+                        <a href="#">Toys & Hobbies</a>
+                    </div>
+                  </div>
+                  <ul class="nav-links">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+
+                <div class="login-sing btns">
+                    <a href="" class="btn">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <a href="" class="btn">Sing UP <i class="fa-solid fa-user-plus"></i> </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   </div>
+
+    <section class="checkout">
+        <form id="form_contact" method="post" action="https://script.google.com/macros/s/AKfycbxJgEIAszL-cBrGuC3ikzvRcVwFGtQHgcX8mZ-QKAbV7bR4eHH5azfk03MIx6_-MDVS/exec">
+
+            <input type="hidden" id="items" name="items">
+            <input type="hidden" id="total_Price" name="Total Price">
+            <input type="hidden" id="count_Items" name="Count Items">
+
+            <div class="container">
+                <div class="ordersummary">
+                    <h1>Order Summary</h1>
+
+                    <div class="items" id="checkout_items">
+
+
+
+                    </div>
+
+
+
+                    <div class="bottom_summary">
+                        <div class="shop_table">
+                            <p>Subtotal :</p>
+                            <span class="subtotal_checkout">$325.00</span>
+                        </div>
+
+
+                        <div class="shop_table">
+                            <p>Shipping :</p>
+                            <span class="">$20.00</span>
+                        </div>
+
+
+
+                        <div class="shop_table">
+                            <p>total :</p>
+                            <span class="total_checkout">$325.00</span>
+                        </div>
+
+
+                        <div class="button_div">
+                            <button type="submit">Place order</button>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="input_info">
+                  
+                    <div class="address">
+                        <h2>Delivery Address</h2>
+
+                        <div class="inputs">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Enter your email" name="Email" required>
+
+
+                            <label for="">Name</label>
+                            <input type="text" placeholder="enter your name" name="Name" required>
+
+                            <label for="">Address</label>
+                            <input type="text" placeholder="enter your address" name="Address" required>
+
+                            <label for="">Phone</label>
+                            <input type="number" placeholder="enter your phone" name="Phone" required>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="coupon">
+                        <h2>Coupon Code</h2>
+
+                        <div class="inputs">
+                            <label for="">Coupon code</label>
+                            <input type="text" placeholder="enter your coupon code">
+                        </div>
+
+                        <div class="btn_coupon">
+                            <button>Apply Coupon</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+   <!-- start footer  -->
+    <footer>
+        <div class="container">
+        <div class="big-row">
+            <img class="logo-footer" src="img/footer-logo.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, magnam.</p>
+            <div class="icons-footer">
+                <a href="tel:+201275263562"><i class="fa-solid fa-phone"></i></a>
+                <a a href="https://www.facebook.com/eid.sheba.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/eid-sheba/" target="_blank">
+                    <i class="linked  me-2 fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <!-- firts row  -->
+        <div class="row">
+            <h4>Find It Fast</h4>
+            <div class="links">
+                <a href=""><i class="fa-solid fa-caret-right"></i> Laptops & Computer</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i>TB & Audio</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i>Jewelry & Watches</a>
+            </div>
+        </div>
+        <!-- second row  -->
+         <div class="row">
+            <h4>Quick Links</h4>
+            <div class="links">
+                <a href=""><i class="fa-solid fa-caret-right"></i> Your Account</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i>shipping & Delivery</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i>Purchase History</a>
+            </div>
+        </div>
+        <!-- third row  -->
+         <div class="row">
+            <h4>Service</h4>
+            <div class="links">
+                <a href=""><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i>Privacy Policy</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Help</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i>FAQS</a>
+            </div>
+        </div>
+        </div>
+       
+    </footer>
+     <div class="bottom-fotter">
+            <div class="container">
+                <p>&copy;<span> Eid Store </span>.All Rights Reserved.</p>
+                <div class="cards">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- start cart  -->
+      <div class="cart">
+        <div class="top_cart">
+            <h3>Cart Itmes : <span class="count_item_cart">0</span></h3>
+            <span class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <!-- start items in cart  -->
+        <div class="items_in_cart" id="Cart_items">
+           
+        </div>
+        <!-- end items in cart  -->
+        <div class="bottom_cart">
+        <div class="total">
+            <p>Total</p>
+            <p class="price_cart_total">$0</p>
+        </div>
+        <div class="button_cart">
+            <a href="" class="btn_cart btn">CheckOut</a>
+            <span class="btn_cart trans_bg btn">Shop More</span>
+        </div>
+      </div>
+ 
+        </div>
+       
+   
+
+      
+
+
+    <!-- DO NOT WRITTE AFTER THIS  -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
